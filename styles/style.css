@@ -5,6 +5,7 @@ h1 {
 
 p {
 	text-align: center;
+  color: grey;
 }
 
 img {
@@ -13,11 +14,12 @@ img {
 
 footer {
 	text-align: center;
-	color: lightgrey;
+	color: grey;
 }
 
 i {
 	color: black;
+  font-size: 48px;
 
 }
 
@@ -42,7 +44,7 @@ i {
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 28px;
 }
 
 .topNav a.icon {
@@ -57,7 +59,10 @@ a.active {
   color: black;
 }
 
-
+.icon {
+  height: 48px;
+  width: 48px;
+}
 
 
 /* TEXT STYLING */
@@ -68,6 +73,9 @@ a.active {
 	height: 400px;
 	background-color: red;
 	background-image: url(../img/landscape-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .maingImg {
@@ -88,7 +96,7 @@ a.active {
 
 .imgDescrip {
 	text-align: justify;
-	font-size: 14px;
+	font-size: 20px;
 	padding: 5px;
 }
 
@@ -108,7 +116,7 @@ a.active {
 }
 
 .gallerySelector:hover .middle {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .buttonText {
@@ -122,12 +130,6 @@ a.active {
 /* IMAGE STYLING */
 .row {
 	z-index: -2;
-}
-
-.col-sm-4{
-}
-
-.col-sm-8 {
 }
 
 .gallerySelector{
