@@ -103,6 +103,15 @@ a.active {
 
 
 /* HOME PAGE IMAGES */
+.gallery-image {
+  width: 100%;
+}
+
+.gallery-text {
+  width: 100%;
+  padding: 2.5%;
+}
+
 .gallery-row {
   align-items: center;
   bottom: 0;
