@@ -9,8 +9,6 @@ h1 {
 
 h2 {
   text-align: center;
-  color: grey;
-
 }
 
 p {
@@ -23,8 +21,11 @@ img {
 }
 
 footer {
+  display: block;
+  width: 100%;
 	text-align: center;
 	color: grey;
+  padding-top: 10px;
 }
 
 i {
@@ -55,14 +56,17 @@ i {
   font-weight: normal;
 }
 
-/* NAV BAR STYLE */
 
+
+
+/* NAV BAR STYLE */
 .topNav {
   overflow: hidden;
   background-color: ;
   position: relative;
   top: 0;
-  width: 100%;
+  width: 98%;
+  height: 45px;
 }
 
 .topNav #links {
@@ -72,10 +76,10 @@ i {
 
 .topNav a {
   float: left;
-  color: #f2f2f2;
+  color: #b3b3b3;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 14px;
 }
 
 .topNav a.icon {
@@ -93,6 +97,38 @@ a.active {
 .icon {
   height: 48px;
   width: 48px;
+}
+
+
+
+
+/* HOME PAGE IMAGES */
+.gallery-row {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  z-index: -3;
+}
+
+.gallery-row:first-child {
+  background-color: white;
+  z-index: -1;
+}
+
+.gallery-row:nth-child(3) {
+  background-color: white;
+  z-index: -2;
+}
+
+.gallery-row:last-child {
+  background-color: white;
+  z-index: -4;
 }
 
 
@@ -132,15 +168,15 @@ a.active {
 
 
 
+
 /* IMAGE STYLING */
 .row {
-	z-index: -2;
+  max-height: 80%;
 }
 
 .gallerySelector{
 	margin: 0px;
 	background-color: lightgrey;
-  height: 100%;
   width: 100%;
 }
 
@@ -158,18 +194,29 @@ a.active {
 
 
 
-/* CONTACT FORM */
 
-.contactForm {
+/* CONTACT FORM */
+.contactFormBox {
+  width: 100%;
+  height: 75%;
+  background-image: url(../img/home-page-landscape-background.jpg);
+}
+
+.contactFormInfo {
+  width: 80%;
+  margin-left: 10%;
+  float: none;
+  background-color: lightgrey;
   text-align: center;
   font-family: arial;
   font-size: 20px;
+  color: #333333;
+  opacity: 0.8;
 }
 
 .contactFormDivider {
   width: 100%;
   height: 40px;
-  background-color: none;
 }
 
 .socials {
@@ -196,9 +243,41 @@ a.active {
   opacity: 0.3;
 }
 
+.contactFormBlank {
+  background-color: white;
+  width: 100%;
+}
 
-/* RESPONSIVE STYLING */
 
-@media (min-width: 600px) {
+
+/* RESPONSIVE */
+
+@media (min-width: 650px){ 
+
+.topNav {
+  height: 60px;
+}
+
+.topNav a {
+  font-size: 22px;
+}
+
+.contactFormBox {
+  width: 90%;
+  height: 75%;
+}
+
+.contactFormInfo {
+  width: 40%;
+  height: 100%;
+  float: right;
+  right: 30%;
+}
+
+
+}
+
+@media (min-width: 1100px){ 
+
 
 }
