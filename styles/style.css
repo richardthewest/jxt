@@ -65,8 +65,9 @@ i {
   background-color: ;
   position: relative;
   top: 0;
-  width: 98%;
+  width: 100%;
   height: 45px;
+  padding: 10px;
 }
 
 .topNav #links {
@@ -77,9 +78,9 @@ i {
 .topNav a {
   float: left;
   color: #b3b3b3;
-  padding: 14px 16px;
+  margin: 0px 5px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .topNav a.icon {
@@ -96,9 +97,12 @@ a.active {
 
 .icon {
   height: 48px;
-  width: 48px;
+  margin: none;
 }
 
+.topNav a.icon {
+  margin: 0px;
+} 
 
 
 
@@ -213,6 +217,7 @@ a.active {
 
 .contactFormInfo {
   width: 80%;
+  height: 100%;
   margin-left: 10%;
   float: none;
   background-color: lightgrey;
