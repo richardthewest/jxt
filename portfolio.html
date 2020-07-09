@@ -6,32 +6,51 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="javascript/navHamburgerFunction.js" type="text/javascript"></script>
+  <script src="javascript/scrollToSection.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="topNav">
-      <a href="javascript:void(0);" class="icon" onclick="navHamburgerFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="navHamburgerFunction()">
       <i class="fa fa-bars"></i>
     </a>
     <div id="links">
       <a href="index.html">Home</a>
-      <a href="portfolio.html" class="active">Gallery</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
       <a href="about.html">About Me</a>
       <a href="contact.html">Contact</a>
     </div>
+    <div class="current-active">
+      <a href="portfolio.html" class="active">Portfolio</a>
+    </div>
   </div>
 
-
-<div class="gallery-row">
+  <div class="first-slide">
+    <div class="portfolio-info">
+    <h2>This is What I Specialise In</h2>
+      <p class="gallery-intro">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel tempus augue. In ac lacinia enim. Pellentesque sed condimentum diam, quis rutrum sapien. Mauris arcu dui, venenatis eu mi sit amet, porttitor auctor ligula. Praesent hendrerit egestas finibus. Nulla molestie erat ut diam pharetra faucibus. Nullam et tempor nunc.
+        <br>
+        <br>
+        <i onclick="scrollToSection()" class="fa fa-angle-double-down"></i>
+      </p>
+      <br>
+    </div>
+  </div>
+    <br>
+<div class="container-fluid">
+<div class="gallery-row" id="first-item">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8">
-        <img class="centreCropped" src="img/home-page-image1.png" alt="urban nightscape">
-      </div>
       <div class="col-md-4">
         <h2>Wedding</h2>
           <p class="gallery-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel tempus augue. In ac lacinia enim. Pellentesque sed condimentum diam, quis rutrum sapien. Mauris arcu dui, venenatis eu mi sit amet, porttitor auctor ligula. Praesent hendrerit egestas finibus. Nulla molestie erat ut diam pharetra faucibus. Nullam et tempor nunc. 
           </p>
+      </div>
+      <div class="col-md-8">
+        <a href="wedding-gallery.html">
+        <img class="centreCropped" src="img/home-page-image1.png" alt="urban nightscape">
+      </a>
       </div>
     </div>
   </div>
@@ -43,7 +62,9 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-8">
+        <a href="https://www.google.com/">
         <img class="centreCropped" src="img/home-page-image2.png" alt="urban nightscape">
+        </a>
       </div>
       <div class="col-md-4">
         <h2>Engagement</h2>
@@ -59,14 +80,16 @@
 <div class="gallery-row">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8">
-        <img class="centreCropped" src="img/home-page-image3.png" alt="urban nightscape">
-      </div>
       <div class="col-md-4">
         <h2>Portrait</h2>
           <p class="gallery-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel tempus augue. In ac lacinia enim. Pellentesque sed condimentum diam, quis rutrum sapien. Mauris arcu dui, venenatis eu mi sit amet, porttitor auctor ligula. Praesent hendrerit egestas finibus. Nulla molestie erat ut diam pharetra faucibus. Nullam et tempor nunc. 
           </p>
+      </div>
+      <div class="col-md-8">
+        <a href="#">
+        <img class="centreCropped" src="img/home-page-image3.png" alt="urban nightscape">
+        </a>
       </div>
     </div>
   </div>
@@ -78,7 +101,9 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-8">
+        <a href="#">
         <img class="centreCropped" src="img/home-page-image1.png" alt="urban nightscape">
+        </a>
       </div>
       <div class="col-md-4">
         <h2>Branding</h2>
@@ -88,6 +113,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 
