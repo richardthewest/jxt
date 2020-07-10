@@ -119,8 +119,18 @@ a.active, .current-active {
 
 .portfolio-info {
   background-color: #ffe6e6;
-  height: 60vh;
-  margin-top: 10vh;
+  height: 80vh;
+  margin-top: 0;
+}
+
+.portfolio-heading {
+  font-size: 1.5rem;
+}
+
+.portfolio-text {
+  text-align: center;
+  font-size: 18px;
+  margin: 5vw;
 }
 
 .gallery-row {
@@ -152,23 +162,8 @@ a.active, .current-active {
   z-index: 1;
 }
 
-.gallery-row h2 {
-  padding-top: 5vh;
-}
 
-.gallery-intro {
-  text-align: center justify;
-  font-size: 28px;
 
-}
-
-.gallery-text {
-  text-align: justify;
-  font-size: 18px;
-}
-
-#first-item {
-}
 
 
 
@@ -294,13 +289,15 @@ a.active, .current-active {
 
 
 
+
+
 /* IMAGE GALLERIES */
+
 .gallery-section {
   width: 100%;
   height: auto;
   float: left;
 }
-
 
 .gallery-container {
   position: relative;
@@ -381,6 +378,20 @@ a.active, .current-active {
   float: right;
   right: 30%;
 }
+
+.portfolio-info {
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+.portfolio-heading {
+  font-size: 2.0rem;
+}
+
+.portfolio-text {
+  font-size: 1.2rem;
+}
+
 }
 
 @media (min-width: 768px){
@@ -391,6 +402,14 @@ a.active, .current-active {
 
 .centreCropped {
   height: 90vh; 
+}
+
+.portfolio-heading {
+  font-size: 2.5rem;
+}
+
+.portfolio-text {
+  font-size: 1.5rem;
 }
 
 }
