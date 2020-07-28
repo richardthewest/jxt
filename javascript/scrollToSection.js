@@ -1,4 +1,9 @@
-function scrollToSection() {
+function scrollToSectionOne() {
 	var elmnt = document.getElementById("first-item");
-	elmnt.scrollIntoView();
+elmnt.scrollIntoView( {
+		behavior: 'smooth'
+	});
 }
+
+
+

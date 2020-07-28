@@ -10,6 +10,7 @@ h1 {
 h2 {
   text-align: center;
   padding-top: 5vh;
+  color: grey;
 }
 
 p {
@@ -24,8 +25,8 @@ img {
 footer {
   display: block;
   width: 100%;
-	text-align: center;
-	color: grey;
+  text-align: center;
+  color: grey;
   padding-top: 10px;
 }
 
@@ -108,65 +109,81 @@ a.active, .current-active {
 
 
 /* PORTFOLIO IMAGES */
-.first-slide {
+.slide-container {
   position: relative;
-  height: 100%;
   top: 0;
-  justify-content: center;  
-  background-color: white;
-  z-index: 9
-}
-
-.portfolio-info {
-  background-color: #ffe6e6;
-  height: 80vh;
-  margin-top: 0;
-}
-
-.portfolio-heading {
-  font-size: 1.5rem;
-}
-
-.portfolio-text {
-  text-align: center;
-  font-size: 18px;
-  margin: 5vw;
+  margin-left: 5vw;
+  width: 90vw;
 }
 
 .gallery-row {
   align-items: center;
-  bottom: 0;
+  bottom: 10%;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
-  height: 100vh;
-  min-height: 500px;
-  padding: 1rem;
+  height: 80vh;
+  min-height: 400px;
   position: sticky;
   width: 100%;
   background-color: white;
-  z-index: 4;
+  z-index: 5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gallery-row:nth-child(2) {
   background-color: white;
-  z-index: 3;
+  z-index: 4;
 }
 
 .gallery-row:nth-child(3) {
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 }
 
 .gallery-row:nth-child(4) {
   background-color: white;
+  z-index: 2;
+}
+
+.gallery-row:nth-child(5) {
+  background-color: white;
   z-index: 1;
 }
 
+#portfolio-info {
+  background-color: #ffe6e6;
+  display: block;
+}
 
+.portfolio-slide-text {
+  padding-top: 30%;
+  text-align: center;
+}
 
+.portfolio-heading {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0;
+}
 
+.portfolio-text {
+  font-size: 16px;
+  margin: 1vw;
+}
 
+.portfolio-img {
+  object-fit: cover;
+  object-position: center;
+  height: 75vh;
+}
 
+.spacer {
+  height: 30vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
 
 
 
@@ -175,6 +192,28 @@ a.active, .current-active {
 	text-align: justify;
 	font-size: 20px;
 	padding: 5px;
+}
+
+.gallerySelector:hover img {
+  opacity: 0.7;
+  border: inset;
+}
+
+.gallerySelector:hover .buttonText {
+  display: block;
+}
+
+.gallerySelector:hover .imgDescrip {
+  opacity: 0.7;
+}
+
+.gallerySelector:hover h2 {
+  opacity: 0.7;
+}
+
+.gallerySelector:hover .middle {
+  display: block;
+  opacity: 1;
 }
 
 .middle {
@@ -188,18 +227,11 @@ a.active, .current-active {
   font-size: 16px;
 }
 
-.gallerySelector:hover img {
-  opacity: 0.7;
-}
-
-.gallerySelector:hover .middle {
-  opacity: 0.7;
-}
-
 .buttonText {
-  background-color: #737373;
+  background-color: lightgrey;
   color: white;
   font-size: 16px;
+  text-align: center;
   padding: 16px 32px;
 }
 
@@ -207,14 +239,14 @@ a.active, .current-active {
 
 
 /* IMAGE STYLING */
-.row {
-  max-height: 80%;
-}
-
 .gallerySelector{
 	margin: 0px;
-	background-color: lightgrey;
   width: 100%;
+}
+
+.gallery-img {
+  position: relative;
+  align-content: center;
 }
 
 .image {
@@ -233,11 +265,23 @@ a.active, .current-active {
 
 
 /* CONTACT FORM */
+input, textarea {
+  padding: 1vh 1vw;
+  margin: 2px 0;
+  border: none;
+  text-align: center;
+}
+
+
 .contactFormBox {
   width: 100%;
   height: 75%;
   min-height: 450px;
-  background-image: url(../img/home-page-landscape-background.jpg);
+  background-color: #f2f2f2;
+  background-image: url(../img/engagement/engagement-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .contactFormInfo {
@@ -245,7 +289,7 @@ a.active, .current-active {
   height: 100%;
   margin-left: 10%;
   float: none;
-  background-color: lightgrey;
+  background-color: #f2ffe6;
   text-align: center;
   font-family: arial;
   font-size: 20px;
@@ -255,7 +299,7 @@ a.active, .current-active {
 
 .contactFormDivider {
   width: 100%;
-  height: 40px;
+  height: 10px;
 }
 
 .socials {
@@ -322,29 +366,22 @@ a.active, .current-active {
 
 .photos {
   line-height: 1px;
-  -webkit-column-count: 4;
+  -webkit-column-count: 3;
   -webkit-column-gap:   1px;
-  -moz-column-count:    4;
+  -moz-column-count:    3;
   -moz-column-gap:      1px;
-  column-count:         4;
+  column-count:         3;
   column-gap:           1px; 
 }
 
 @media (max-width: 1000px) {
-  .photos {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
-  }
-}
-@media (max-width: 800px) {
   .photos {
     -moz-column-count:    2;
     -webkit-column-count: 2;
     column-count:         2;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .photos {
     -moz-column-count:    1;
     -webkit-column-count: 1;
@@ -357,60 +394,54 @@ a.active, .current-active {
 
 /* RESPONSIVE */
 
-@media (min-width: 650px){ 
+@media (min-width: 700px){ 
 
-.topNav {
-  height: 60px;
-}
+  .topNav {
+    height: 60px;
+  }
 
-.topNav a {
-  font-size: 18px;
-}
+  .topNav a {
+    font-size: 18px;
+  }
 
-.contactFormBox {
-  width: 90%;
-  height: 75%;
-}
+  .contactFormBox {
+    width: 95%;
+  }
 
-.contactFormInfo {
-  width: 40%;
-  height: 100%;
-  float: right;
-  right: 30%;
-}
+  .contactFormInfo {
+    width: 40%;
+    height: 100%;
+    float: right;
+  }
 
-.portfolio-info {
-  height: 60vh;
-  margin-top: 10vh;
-}
+  .portfolio-info {
+    height: 60vh;
+    margin-top: 10vh;
+  }
 
-.portfolio-heading {
-  font-size: 2.0rem;
-}
+  .portfolio-heading {
+    font-size: 2.0rem;
+  }
 
-.portfolio-text {
-  font-size: 1.2rem;
-}
+  .portfolio-text {
+    font-size: 0.8rem;
+  }
 
 }
 
 @media (min-width: 768px){
 
-.gallery-row {
-  font-size: 22px;
-}
+  .gallery-row {
+    font-size: 22px;
+  }
 
-.centreCropped {
-  height: 90vh; 
-}
+  .portfolio-heading {
+    font-size: 2.2rem;
+  }
 
-.portfolio-heading {
-  font-size: 2.5rem;
-}
-
-.portfolio-text {
-  font-size: 1.5rem;
-}
+  .portfolio-text {
+    font-size: 1.0rem;
+  }
 
 }
 

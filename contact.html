@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="topNav">
-      <a href="javascript:void(0);" class="icon" onclick="navHamburgerFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="navHamburgerFunction()">
       <i class="fa fa-bars"></i>
     </a>
     <div id="links">
@@ -28,29 +28,40 @@
 
   <div class="contactFormBox">
     <div class="contactFormInfo">
-      <div class="contactFormDivider"></div>
       <h2>Let's Connect</h2>
-      <div class="contactFormDivider"></div>
-      <h3>Call</h3>
-      <a class="fa fa-phone" href="tel:xxx">0400 000 000</a>
-      <div class="contactFormDivider"></div>
-      <h3>Email</h3>
-      <a href="mailto:someone@example.com?Subject=Email%Query" target="_top">example@mail.com</a>
+      <span>
+        <form id="contact-form" action="contact_details.php" method="post" target="_self" autocomplete="on">
+          <input type="text" id="name" name="name" placeholder="What's Your Name?" size="30" required><br>
+          <input type="email" id="email" name="email" placeholder="What's Your Email Address?" size="30" required><br>
+          <input type="tel" id="phone" name="phone" placeholder="What's Your Number?" size="30"><br>
+          <textarea type="text" id="comments" name="comments" placeholder="Tell me about your inquiry ..." size="30"></textarea><br>
+          <input type="Submit" name="Submit" id="Submit"><br>
+        </form>
+      </span>
+      <span>
+        <a class="fa fa-phone" href="tel:xxx"> 0400 000 000</a>
+      </span>
+      <br>
+      <span>
+        <a href="mailto:someone@example.com?Subject=Email%Query" target="_top">example@mail.com</a>
+      </span>
       <div class="contactFormDivider"></div>
       <div class="socials">
-        <a href="https://www.facebook.com/?hl=en" class="fa fa-facebook fa-2x"></a>
-        <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram fa-2x"></a>
+        <span>
+          <a href="https://www.facebook.com/?hl=en" class="fa fa-facebook fa-2x"></a>
+          <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram fa-2x"></a>
+        </span>
       </div> 
       <div class="contactFormDivider"></div>
     </div>
   </div>
 
 </body>
-    <footer>
-      Brisbane based Photographer
-      <br>
-      Wedding | Engagement | Portrait | Branding
-      <br>
-      copyright 2020
-    </footer>
+<footer>
+  Brisbane based Photographer
+  <br>
+  Wedding | Engagement | Portrait | Branding
+  <br>
+  copyright 2020
+</footer>
 </html>
