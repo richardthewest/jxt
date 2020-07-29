@@ -53,13 +53,23 @@ footer {
   font-weight: normal;
 }
 
+.landing-page-header {
+  text-decoration: underline;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  color: grey;
+}
+
+.feature-card {
+  box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), 8px 0 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 
 /* NAV BAR STYLE */
 .topNav {
-  overflow: hidden;
   background-color: ;
+  overflow: hidden;
   position: relative;
   top: 0;
   width: 100%;
@@ -235,7 +245,24 @@ a.active, .current-active {
   padding: 16px 32px;
 }
 
+#landing-page-buttons {
+  background-color: none;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  border: 
+}
 
+.btn {
+  width: 10vw;
+  height: 5vh;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
 
 
 /* IMAGE STYLING */
@@ -270,6 +297,13 @@ input, textarea {
   margin: 2px 0;
   border: none;
   text-align: center;
+  width: 80%;
+  font-size: 14px;
+}
+
+
+#Submit:hover {
+background-color: grey
 }
 
 
@@ -303,7 +337,9 @@ input, textarea {
 }
 
 .socials {
+  text-align: center;
   padding: 10px;
+  margin: auto;
 }
 
 .fa {

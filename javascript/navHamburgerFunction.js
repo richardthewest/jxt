@@ -1,8 +1,12 @@
 function navHamburgerFunction() {
-  var x = document.getElementById("links");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+	var link = document.getElementById("links");
+	var nav = document.getElementById("topNav");
+
+	if (link.style.display === "block") {
+		link.style.display = "none";
+		nav.style.backgroundColor = "";
+	} else {
+		link.style.display = "block";
+		nav.style.backgroundColor = "#f2f2f2";
+	};
 }
