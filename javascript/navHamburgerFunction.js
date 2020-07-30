@@ -7,6 +7,6 @@ function navHamburgerFunction() {
 		nav.style.backgroundColor = "";
 	} else {
 		link.style.display = "block";
-		nav.style.backgroundColor = "#f2f2f2";
+		nav.style.backgroundColor = "white";
 	};
 }

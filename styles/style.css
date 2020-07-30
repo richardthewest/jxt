@@ -84,7 +84,7 @@ footer {
 
 .topNav a {
   float: left;
-  color: #b3b3b3;
+  color: #808080;
   margin: 0px 5px;
   text-decoration: none;
   font-size: 16px;
@@ -129,7 +129,7 @@ a.active, .current-active {
 .gallery-row {
   align-items: center;
   bottom: 10%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   height: 80vh;
@@ -167,7 +167,7 @@ a.active, .current-active {
 }
 
 .portfolio-slide-text {
-  padding-top: 30%;
+  padding-top: 2vh;
   text-align: center;
 }
 
@@ -185,11 +185,11 @@ a.active, .current-active {
 .portfolio-img {
   object-fit: cover;
   object-position: center;
-  height: 75vh;
+  max-height: 40vh;
 }
 
 .spacer {
-  height: 30vh;
+  height: 25vh;
   width: 100%;
   display: block;
   position: relative;
@@ -246,12 +246,10 @@ a.active, .current-active {
 }
 
 #landing-page-buttons {
-  background-color: none;
   position: relative;
   width: 90%;
   margin: auto;
   height: auto;
-  border: 
 }
 
 .btn {
@@ -263,6 +261,8 @@ a.active, .current-active {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
+
+
 
 
 /* IMAGE STYLING */
@@ -432,10 +432,6 @@ background-color: grey
 
 @media (min-width: 700px){ 
 
-  .topNav {
-    height: 60px;
-  }
-
   .topNav a {
     font-size: 18px;
   }
@@ -450,6 +446,10 @@ background-color: grey
     float: right;
   }
 
+  .portfolio-slide-text {
+    padding-top: 0;
+  }
+
   .portfolio-info {
     height: 60vh;
     margin-top: 10vh;
@@ -462,13 +462,20 @@ background-color: grey
   .portfolio-text {
     font-size: 0.8rem;
   }
-
 }
 
 @media (min-width: 768px){
 
   .gallery-row {
     font-size: 22px;
+  }
+
+  .portfolio-slide-text {
+    padding-top: 30%;
+  }
+
+  .portfolio-img {
+    max-height: 75vh;
   }
 
   .portfolio-heading {
