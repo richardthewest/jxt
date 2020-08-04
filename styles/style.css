@@ -285,7 +285,7 @@ a.active, .current-active {
 .centreCropped {
   object-fit: cover;
   object-position: center;
-  height: 50vh; 
+  height: 80vh; 
 }
 
 
