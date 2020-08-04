@@ -346,14 +346,11 @@ background-color: grey
   padding: 5px;
 }
 
-.fa-instagram .fa-facebook{
+.fa-instagram {
   text-align: center;
   text-decoration: none;
   width: 60px;
   margin: 5px;
-}
-
-.fa-instagram {
   color: black;
 }
 
