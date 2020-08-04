@@ -198,10 +198,8 @@ a.active, .current-active {
 
 
 /* TEXT STYLING */
-.imgDescrip {
-	text-align: justify;
-	font-size: 20px;
-	padding: 5px;
+.gallerySelector {
+
 }
 
 .gallerySelector:hover img {
@@ -272,8 +270,11 @@ a.active, .current-active {
 }
 
 .gallery-img {
-  position: relative;
   align-content: center;
+  position: relative;
+  margin: auto;
+  width: 20vw;
+  height: 30%;
 }
 
 .image {
@@ -285,7 +286,7 @@ a.active, .current-active {
 .centreCropped {
   object-fit: cover;
   object-position: center;
-  height: 80vh; 
+  height: 50vh; 
 }
 
 
