@@ -224,6 +224,10 @@ a.active, .current-active {
   opacity: 1;
 }
 
+.galleryHeading {
+  padding: 2rem 0 4rem 0;
+}
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -273,8 +277,6 @@ a.active, .current-active {
   align-content: center;
   position: relative;
   margin: auto;
-  width: 20vw;
-  height: 30%;
 }
 
 .image {
@@ -286,8 +288,10 @@ a.active, .current-active {
 .centreCropped {
   object-fit: cover;
   object-position: center;
-  height: 50vh; 
+  height: 80vh;
 }
+
+
 
 
 
