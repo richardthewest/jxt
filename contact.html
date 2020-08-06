@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Contact</title>
+	<title>Josie Tang | Photographer | Contact</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,49 +10,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="topNav" id="topNav">
-    <a href="javascript:void(0);" class="icon" onclick="navHamburgerFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <div id="links">
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="about.html">About Me</a>       
-      <a href="contact.html" class="active">Contact</a>
+  <!-- HEADER -->
+  <header>
+    <div class="topNav" id="topNav">
+      <a href="javascript:void(0);" class="icon" onclick="navHamburgerFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About Me</a>       
+        <a href="contact.html" class="active">Contact</a>
+      </div>
     </div>
-  </div>
+  </header>
 
+  <!-- CONTACT INFO -->
+  <div class="container" id="full-page-div">
+    <div class="row">
 
-  <div class="contactFormBox">
-    <div class="contactFormInfo">
-      <h2>Let's Connect</h2>
-      <span>
+      <div class="col-md-1">
+      </div>
+
+      <div class="col-md-5">
+        <img src="img/image1.png" alt="an image">
+      </div>
+
+      <div class="col-md-5">
+        <h2 class="contact-heading">Let's Connect</h2>
         <form id="contact-form" action="contact_details.php" method="post" target="_self" autocomplete="on">
-          <input type="text" id="name" name="name" placeholder="What's Your Name?" size="30" required><br>
-          <input type="email" id="email" name="email" placeholder="What's Your Email Address?" size="30" required><br>
-          <input type="tel" id="phone" name="phone" placeholder="What's Your Number?" size="30"><br>
+          <!-- NAME -->
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" size="30" required><br>
+          <!-- EMAIL -->
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" size="30" required><br>
+          <!-- COMMENTS -->
+          <label for="comments">Comments:</label><br>
           <textarea type="text" id="comments" name="comments" placeholder="Tell me about your inquiry ..." size="30"></textarea><br>
-          <input type="Submit" name="Submit" id="Submit"><br>
+
+          <input type="Submit" name="Submit" id="Submit" value="Send Message"><br>
+
         </form>
-      </span>
-      <br>
-      <span>
-        <a class="fa fa-phone" href="tel:xxx"> 0400 000 000</a>
-      </span>
-      <br>
-      <span>
-        <a href="mailto:josephinextang@gmail.com" target="_top">example@mail.com</a>
-      </span>
-      <div class="contactFormDivider"></div>
-      <div class="socials">
+
+        <br>
+
         <span>
-          <a href="https://instagram.com/josiextang?igshid=1q9ucma0cgpd0" class="fa fa-instagram fa-2x"></a>
+          <a class="email-link" href="mailto:josephinextang@gmail.com" target="_top">example@mail.com</a>
         </span>
-      </div> 
-      <div class="contactFormDivider"></div>
+
+        <div class="contactFormDivider">
+        </div>
+
+        <div class="socials">
+          <span>
+            <a href="https://instagram.com/josiextang?igshid=1q9ucma0cgpd0" class="fa fa-instagram fa-3x"></a>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="col-md-1">
+      </div>
+
     </div>
   </div>
 
+  <!-- END -->
 </body>
 <footer>
   Brisbane based Photographer
