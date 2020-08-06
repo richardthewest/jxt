@@ -211,7 +211,7 @@ a.active, .current-active {
 /* ABOUT ME - CONTACT FORM */
 
 #full-page-div {
-  padding: 12vh 0;
+  padding: 2vh 2vh;
 }
 
 input, textarea {
@@ -232,6 +232,7 @@ label {
 }
 
 .contact-heading {
+  padding-top: 5vh;
   padding-bottom: 2vh;
 }
 
@@ -336,23 +337,16 @@ label {
 /* RESPONSIVE */
 
 @media (min-width: 700px){ 
+  .contact-heading {
+    padding-top: 0;
+  }
+
+  #full-page-div {
+    padding: 12vh 0;
+  }
 
   .topNav a {
     font-size: 18px;
-  }
-
-  .contactFormBox {
-    width: 95%;
-  }
-
-  .contactFormInfo {
-    width: 40%;
-    height: 100%;
-    float: right;
-  }
-
-  .portfolio-slide-text {
-    padding-top: 0;
   }
 
   .portfolio-info {
