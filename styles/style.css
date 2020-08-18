@@ -201,7 +201,7 @@ a.active, .current-active {
 /* PORTFOLIO IMAGES */
 .slider {
   width: 100%;
-  margin: 15vh auto;
+  margin: 2vh auto;
 }
 
 .slick-slide {
@@ -231,6 +231,10 @@ a.active, .current-active {
 
 .slick-current {
   opacity: 1;
+}
+
+ul .slick-dots {
+  display: none;
 }
 
 
@@ -364,6 +368,10 @@ label {
   .topNav #links a {
     display: inline;
     padding: 0;
+    float: left;
+  }
+
+  #links {
     float: right;
   }
 
@@ -390,6 +398,10 @@ label {
 
   .portfolio-text {
     font-size: 1.0rem;
+  }
+
+  .slider {
+    margin: 15vh auto;
   }
 
   .slider img {
