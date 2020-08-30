@@ -60,7 +60,7 @@ footer {
   position: relative;
   top: 0;
   left: 0;
-  height: 5vh;
+  height: 3vh;
   width: auto;
   z-index: 100;
 }
@@ -206,9 +206,8 @@ a.active, .current-active {
   align-content: center;
   position: relative;
   margin: auto;
-  width: 20vw;
   height: auto;
-  padding-top: 5vh;
+  padding-top: 15vh;
 }
 
 .centreCropped {
@@ -223,7 +222,7 @@ a.active, .current-active {
 /* PORTFOLIO IMAGES */
 .slider {
   width: 100%;
-  margin: 2vh auto;
+  margin: 3vh auto;
 }
 
 .slick-slide {
@@ -232,7 +231,7 @@ a.active, .current-active {
 
 .slick-slide img {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   object-fit: cover;
 }
 
@@ -406,7 +405,8 @@ label {
     width: 60%;
   }
 
-  .centreCropped {
+  .gallery-img {
+    width: 20vw;
   }
 
   .portfolio-slide-text {
